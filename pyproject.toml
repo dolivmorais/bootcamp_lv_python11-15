@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "bootcamp-lv-python11-15"
+version = "0.1.0"
+description = ""
+authors = ["Diego Morais <dolivmorais@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pandas = "^2.2.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
