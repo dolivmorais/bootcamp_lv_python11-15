@@ -9,15 +9,8 @@ class CSVProcessor:
     
     def carregar_csv(self):
         self.df = pd.read_csv(self.file_path)
+        return self.df
 
     def filtrar_por(self,coluna, atributo):
         return self.df[self.df[coluna] == atributo]
     
-
-arquivo_csv = './exemplo.csv'
-filtro = 'estado'
-limite = 'sp'
-
-arquivo_CSV = CSVProcessor(arquivo_csv)
-arquivo_CSV.carregar_csv()
-print(arquivo_CSV.filtrar_por(filtro,limite))
